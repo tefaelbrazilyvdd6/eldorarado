@@ -5,6 +5,10 @@ import json
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return "Hello from Flask on Fly.io!"
+
 # Telegram Bot Configuration
 TELEGRAM_BOT_TOKEN = "8373643380:AAFT8McK5-eUfb5sasAPIPkuPyV9eAzkpj0"
 TELEGRAM_CHAT_ID = "8220076576"
